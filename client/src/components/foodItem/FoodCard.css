@@ -219,7 +219,7 @@
 }
 
 
-@media (min-width: 430px) {
+@media (min-width: 450px) {
     .food-card-middle {
       display: none;
     }
@@ -241,7 +241,7 @@
   
 
 
-@media (max-width: 430px) {
+@media (max-width: 450px) {
 
     .food-card.expanded-view .food-item-details {
         display: block;

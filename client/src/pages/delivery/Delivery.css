@@ -45,7 +45,7 @@
 }
 
 
-@media (max-width: 430px) {
+@media (max-width: 450px) {
     .delivery {
         display: flex;
         flex-wrap: wrap;
