@@ -1,0 +1,150 @@
+.order-summary-food-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 565px;
+  height: 180px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: #313131;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.order-summary-food-item .image-container img {
+  width: 129px;
+  height: 129px;
+  flex-shrink: 0;
+}
+
+.order-summary-food-item .details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 215px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.order-summary-food-item .details h1 {
+  color: #fff;
+  font-family: Lexend;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130.5%; /* 23.49px */
+  margin-bottom: 0;
+}
+
+.order-summary-food-item .details h2 {
+  color: #fff;
+  font-family: Lexend;
+  font-size: 15px;
+  font-style: normal;
+  text-align: left;
+  font-weight: 400;
+  line-height: 130.5%; /* 19.575px */
+  opacity: 0.5;
+  margin-top: 10px;
+  margin-bottom: 0;
+  height: 60px;
+  box-sizing: border-box;
+}
+
+.order-summary-food-item .details .quantity-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 40px;
+  margin-top: 0px;
+}
+
+.order-summary-food-item .details .quantity-button button {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #ff6f41 0%, #ff3e00 100%);
+  color: #fff;
+  text-align: center;
+  font-family: Lexend;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130.5%;
+  cursor: pointer;
+  border: none;
+}
+
+.order-summary-food-item .details .quantity-button input[type="number"] {
+  background: transparent;
+  width: 60px;
+  color: #fff;
+  font-family: Lexend;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130.5%;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  text-align: center;
+  -moz-appearance: textfield; /* Hides spin buttons in Firefox */
+  -webkit-appearance: none; /* Hides spin buttons in WebKit browsers */
+  appearance: none; /* Standard property to hide spin buttons */
+}
+
+/* Remove spin buttons in WebKit browsers */
+.order-summary-food-item
+  .details
+  .quantity-button
+  input[type="number"]::-webkit-inner-spin-button,
+.order-summary-food-item
+  .details
+  .quantity-button
+  input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Remove spin buttons in Firefox */
+.order-summary-food-item
+  .details
+  .quantity-button
+  input[type="number"]::-moz-inner-spin-button {
+  display: none;
+}
+
+.order-summary-food-item .price-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 140px;
+  height: 100%;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+.order-summary-food-item .price-details h1 {
+  color: #fff;
+  text-align: center;
+  font-family: Lexend;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130.5%; /* 23.49px */
+  margin: 0;
+}
+
+.order-summary-food-item .price-details .remove-btn {
+  width: 47.364px;
+  height: 29.602px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #ff6f41 0%, #ff3e00 100%);
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+}

@@ -1,0 +1,525 @@
+.food-card {
+    width: 365px;
+    height: 236.433px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background-color: #313131;
+    padding: 30px;
+}
+
+.food-card-top {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: 135px;
+
+}
+
+.food-item-image {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+}
+
+.food-item-details {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 10%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0%;
+}
+
+.food-item-details h1 {
+    margin: 0% 0 5% 0;
+    color: #FFF;
+    font-family: Lexend;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130.5%; 
+}
+
+.food-item-details p {
+    margin: 0%;
+    color: #FFF;
+    font-family: Lexend;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130.5%;
+    opacity: 0.5;
+}
+
+.food-item-sizes {
+    color: #FFF; 
+    font-family: Lexend;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130.5%; 
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.food-size-option{
+    display: flex;
+    align-items: flex-start;
+    height: 25px;
+}
+
+
+.food-size-option .size {
+    width: 70px; 
+    margin-left: 7px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    text-align: left;
+   
+}
+
+
+.food-size-option .price {
+    width: 95px; 
+    margin-right: 0;
+    display: inline-block; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    text-align: left;
+}
+
+
+.food-size-option input[type="radio"] {
+    margin: 0;
+    margin-right: 5px;
+}
+
+.food-size-option label {
+    font-size: 12px;
+    color: #FFF; 
+    cursor: pointer;
+}
+
+
+.food-size-option input[type="radio"]:checked{
+    color: #Fff; 
+}
+
+
+.food-size-option input[type="radio"] {
+    accent-color: #FFF; 
+}
+
+.food-size-option input[type="radio"]:checked {
+    accent-color: #FF3E00;
+}
+
+
+ .food-card .food-card-bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.food-card .food-items-button {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+
+
+
+.food-item-quantity {
+    display: flex;
+    width: 110px;
+    height: 35px;
+    flex-shrink: 0;
+}
+
+.food-item-quantity input[type="number"] {
+    width: 40px;
+    height: 35px;
+    background: linear-gradient(180deg, #FF6F41 0%, #FF3E00 100%);
+    color: #FFF; 
+    text-align: center;
+    color: #FFF;
+    text-align: center;
+    font-family: Lexend;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130.5%;
+    border: none; 
+    outline: none; 
+    box-sizing: border-box;
+    -moz-appearance: textfield; 
+    -webkit-appearance: none; 
+}
+
+.quantity-btn {
+    background: linear-gradient(180deg, #FF6F41 0%, #FF3E00 100%);
+    width: 35px;
+    height: 35px;
+    border-radius: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: Lexend;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130.5%; 
+    border: none; 
+    outline: none; 
+    cursor: pointer;
+}
+
+.decrease-btn {
+    border-radius: 100% 0 0 100%;
+
+}
+
+.increase-btn {
+    border-radius: 0 100% 100% 0;
+}
+
+
+.addToBucket {
+    width: 110px;
+    height: 35px;
+    border: none; 
+    outline: none; 
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: linear-gradient(180deg, #FF6F41 0%, #FF3E00 100%);
+    color: #FFF;
+    text-align: center;
+    font-family: Lexend;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130.5%; 
+    cursor: pointer;
+}
+
+
+@media (min-width: 450px) {
+    .food-card-middle {
+      display: none;
+    }
+
+    .food-card-bottom{
+        display: none;
+    }
+
+    .food-item-quantity-1{
+        display: none;
+    }
+
+    .addToBucket-1{
+        display: none;
+    }
+    
+  }
+
+  
+
+
+@media (max-width: 450px) {
+
+    .food-card.expanded-view .food-item-details {
+        display: block;
+      }
+
+    .food-items-button {
+        display: none;
+    }
+
+    .food-card .food-items-button {
+        display: none; 
+    }
+    .food-card {
+        padding: 20px 25px 25px 25px;
+        width: 155px;
+        height: 230px;
+        box-sizing: border-box;
+        flex-shrink: 0;
+        border-radius: 15px;
+        background: #313131;
+        margin: 0;
+
+    }
+
+    .food-card-top {
+        flex-direction: column;
+        align-items: center;
+        height: auto; 
+    }
+
+    .food-item-image {
+        width: 80px;
+    height: 80px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    }
+
+    .food-card-middle {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .food-item-details {
+        display: none; 
+    }
+
+    .food-card-middle h1 {
+        height: 40px;
+        color: #FFF;
+        text-align: center;
+        font-family: Lexend;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130.5%; /* 18.27px */
+
+    }
+
+    .food-card-middle p{
+        margin: 0;
+        color: #FFF;
+        text-align: center;
+        font-family: Lexend;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130.5%; /* 13.05px */
+
+    }
+
+    .food-card.expanded-view .food-item-details {
+        display: flex;
+    flex-direction: column;
+    margin: 0 0 0 10%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0%;
+    }
+
+    .food-card-view-more {
+        display: inline-block;
+        margin-top: 12px;
+        width: 90px;
+        height: 30px;
+        flex-shrink: 0;
+        border-radius: 50px;
+        background: linear-gradient(180deg, #FF6F41 0%, #FF3E00 100%);
+        border: none;
+        outline: none;
+        color: #FFF;
+        text-align: center;
+        font-family: Lexend;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130.5%; /* 13.05px */
+    }
+
+    .food-card.expanded-view .food-card-view-more {
+        display: none; 
+    }
+
+    .food-card.expanded-view {
+        width: 335px;
+        height: 217px;
+        flex-shrink: 0;
+    }
+
+    .food-card-top.expanded-view {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        width: 100%;
+        height: 135px;
+    
+    }
+
+    .food-item-details h1 {
+        margin: 0% 0 5% 0;
+        color: #FFF;
+        font-family: Lexend;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130.5%; 
+    }
+
+    .food-item-details p {
+        margin: 0%;
+        color: #FFF;
+        font-family: Lexend;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130.5%;
+        opacity: 0.5;
+    }
+
+    .food-item-sizes {
+        color: #FFF; 
+        font-family: Lexend;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130.5%; 
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .food-item-image.expanded-view {
+        width: 80px;
+        height: 80px;
+        flex-shrink: 0;
+    }
+
+    .food-size-option .size {
+        width: 50px; 
+        margin-left: 7px;
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+        text-align: left;
+       
+    }
+
+    .food-size-option .price {
+        width: 70px; 
+        margin-right: 0;
+        display: inline-block; 
+        white-space: nowrap; 
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+        text-align: left;
+    }
+    
+
+
+
+
+    /* Flexbox layout for the first two cards horizontally */
+    .food-card-container {
+    box-sizing: border-box;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background-color: #313131;
+    padding: 30px;
+    }
+
+    .food-card .food-card-bottom {
+        
+        flex-direction: row;
+    
+    }
+
+
+    .food-item-quantity-1 {
+        display: flex;
+        width: 110px;
+        height: 35px;
+        flex-shrink: 0;
+    }
+
+    .food-item-quantity-1 input[type="number"] {
+        width: 40px;
+        height: 35px;
+        background: linear-gradient(180deg, #FF6F41 0%, #FF3E00 100%);
+        color: #FFF; 
+        text-align: center;
+        color: #FFF;
+        text-align: center;
+        font-family: Lexend;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130.5%;
+        border: none; 
+        outline: none; 
+        box-sizing: border-box;
+        -moz-appearance: textfield; 
+        -webkit-appearance: none; 
+    }
+    
+    .quantity-btn {
+        background: linear-gradient(180deg, #FF6F41 0%, #FF3E00 100%);
+        width: 35px;
+        height: 35px;
+        border-radius: 0;
+        color: #FFF;
+        text-align: center;
+        font-family: Lexend;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130.5%; 
+        border: none; 
+        outline: none; 
+        cursor: pointer;
+    }
+    
+    .decrease-btn {
+        border-radius: 100% 0 0 100%;
+    
+    }
+    
+    .increase-btn {
+        border-radius: 0 100% 100% 0;
+    }
+
+
+    .addToBucket-1 {
+        width: 110px;
+    height: 35px;
+    border: none; 
+        outline: none; 
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: linear-gradient(180deg, #FF6F41 0%, #FF3E00 100%);
+    color: #FFF;
+    text-align: center;
+    font-family: Lexend;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130.5%; 
+    cursor: pointer;
+    }
+
+
+ 
+    
+    
+
+}
+

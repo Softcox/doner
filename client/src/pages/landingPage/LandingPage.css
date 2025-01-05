@@ -1,0 +1,164 @@
+.landingPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    padding: 5%;
+}
+
+.landingPage .landingPage-container-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.landingPage .landingPage-container-top img {
+    width: 1160px;
+    height: 405px;
+    flex-shrink: 0;
+    border-radius: 25px;
+}
+
+.landingPage .landingPage-container-middle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 120px;
+    gap: 10%;
+}
+
+.landingPage .landingPage-container-middle .delivery-img img, .dine-in img, .takeaway img {
+    width: 100px;
+    margin: 0;
+    height: 100px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.landingPage .landingPage-container-middle .delivery-img h2, .dine-in h2, .takeaway h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: Lexend;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130.5%; /* 23.49px */
+}
+
+.landingPage .landingPage-container-bottom {
+    margin-top: 30px;
+}
+
+.landingPage .landingPage-container-bottom h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Knewave;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130.5%; /* 65.25px */
+}
+
+.landingPage .landingPage-container-bottom span {
+    color: #FF6F41;
+    font-family: Knewave;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130.5%;
+}
+
+.landingPage .landingPage-container-bottom .underline {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .landingPage .landingPage-container-bottom .underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    width: 100%;
+    height: 3px; 
+    background-color: currentColor;
+  }
+
+  .landingPage .landingPage-container-bottom .combo {
+    margin-top: 70px;
+  }
+
+.landingPage .landingPage-container-bottom .combo img {
+    width: 361px;
+    height: 130.707px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    border-radius: 13px;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+    margin: 11.5px;
+    cursor: pointer;
+}
+
+@media (max-width:450px) {
+    .landingPage {
+        padding: 3%;
+    }
+
+    .landingPage .landingPage-container-top img {
+        width: 333px;
+        height: 117px;
+        flex-shrink: 0;
+        border-radius: 13px;
+    }
+
+    .landingPage .landingPage-container-middle {
+        margin-top: 50px;
+     
+    }
+
+    .landingPage .landingPage-container-middle .delivery-img img, .dine-in img, .takeaway img {
+        width: 80px;
+        height: 80px;
+        flex-shrink: 0;
+        
+    }
+
+    .landingPage .landingPage-container-middle .delivery-img h2, .dine-in h2, .takeaway h2 {
+        color: #FFF;
+        text-align: center;
+        font-family: Lexend;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130.5%; /* 15.66px */
+    }
+
+    .landingPage .landingPage-container-bottom h1 {
+        font-size: 25px;
+    }
+
+    .landingPage .landingPage-container-bottom span {
+        font-size: 25px;
+    }
+
+    .landingPage .landingPage-container-bottom .underline::after {
+        height: 2px; 
+      }
+
+      .landingPage .landingPage-container-bottom .combo {
+        margin-top: 30px;
+      }
+
+      .landingPage .landingPage-container-bottom .combo img {
+        width: 333px;
+        height: 120px;
+        flex-shrink: 0;
+        margin: 5px;
+    }
+    
+}

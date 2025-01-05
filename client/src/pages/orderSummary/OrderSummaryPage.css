@@ -1,0 +1,41 @@
+.order-summary-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-summary-page h1 {
+  color: #fff;
+  text-align: center;
+  font-family: Lexend;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130.5%; /* 45.675px */
+}
+
+.order-summary-page .order-summary-page-top {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.order-summary-page .order-summary-page-top .order-item-receipt {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.order-summary-page .order-summary-page-top .order-item-receipt .order-items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 25px;
+}
