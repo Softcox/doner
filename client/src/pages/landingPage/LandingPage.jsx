@@ -1,5 +1,5 @@
-import React from 'react';
-import HeroImage from '../../assets/images/HeroImage.jpg';
+import React from "react";
+import HeroImage from "../../assets/images/HeroImage.jpg";
 import Delivery from "../../assets/icons/Delivery.png";
 import DineIn from "../../assets/icons/Dine-In.png";
 import Takeaway from "../../assets/icons/Take-Away.png";
@@ -9,7 +9,8 @@ import Combo3 from "../../assets/images/combo3.jpg";
 import Combo4 from "../../assets/images/combo4.jpg";
 import Combo5 from "../../assets/images/combo5.jpg";
 import Combo6 from "../../assets/images/combo6.jpg";
-import './LandingPage.css';
+import "./LandingPage.css";
+import { Link } from "react-router-dom";
 
 const comboImages = [
   { src: Combo1, alt: "combo1" },
@@ -31,7 +32,7 @@ export const LandingPage = () => {
         <img src={HeroImage} alt="heroimage" />
       </div>
 
-      <div className="landingPage-container-middle">
+      {/* <div className="landingPage-container-middle">
         <div className="delivery-img">
             <img src={Delivery} alt="delivery" />
             <h2>Delivery</h2>
@@ -42,6 +43,26 @@ export const LandingPage = () => {
         </div>
         <div className="takeaway">
           <img src={Takeaway} alt="takeaway" />
+          <h2>Take away</h2>
+        </div>
+      </div> */}
+      <div className="landingPage-container-middle">
+        <div className="delivery-img">
+          <Link to="/delivery">
+            <img src={Delivery} alt="delivery" />
+          </Link>
+          <h2>Delivery</h2>
+        </div>
+        <div className="dine-in">
+          <Link to="/dine-in">
+            <img src={DineIn} alt="dine-in" />
+          </Link>
+          <h2>Dine in</h2>
+        </div>
+        <div className="takeaway">
+          <Link to="/takeaway">
+            <img src={Takeaway} alt="takeaway" />
+          </Link>
           <h2>Take away</h2>
         </div>
       </div>
